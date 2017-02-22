@@ -27,7 +27,7 @@ public class RestConfig extends RepositoryRestMvcConfiguration {
     public void init() {
         User user = new User("tester", "tester@test.org");
         userRepository.save(user);
-        Greeting greeting1 = new Greeting("Hello!", "tester@test.org", user, new Date());
+        Greeting greeting1 = new Greeting("Helllo!", "tester@test.org", user, new Date());
         Greeting greeting2 = new Greeting("Bye!", "tester@test.org", user, new Date());
         greetingRepository.save(greeting1);
         greetingRepository.save(greeting2);
